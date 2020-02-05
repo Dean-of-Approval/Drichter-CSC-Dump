@@ -23,3 +23,4 @@ def anagramSolution1(s1,s2):
         pos1 = pos1 +1
 
     return stillok
+print(anagramSolution1("abcd","bcda"))
