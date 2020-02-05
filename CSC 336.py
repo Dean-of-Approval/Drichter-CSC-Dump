@@ -1,4 +1,4 @@
-def anagramSolution1(s1.s2):
+def anagramSolution1(s1,s2):
     stillok = True
     if len(s1) != len(s2):
         stillok = False
