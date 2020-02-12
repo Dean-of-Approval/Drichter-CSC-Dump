@@ -9,14 +9,15 @@ dict_timer = Timer("test_dict(d, i)",
 print("\tlist \t  dict")
 
 def test_list(x, i):
-  rand = random.randint(0, i)
+  rand = random.randint(0, len(x))
   if rand in x:
-    pass
+    x.remove(rand)
+  
 
 def test_dict(d, i):
-  rand = random.randint(0, i)
+  rand = random.randint(0, len(d))
   if rand in d:
-    pass
+    del d[rand]
 
 for i in range(100000,1000001,100000):
     x = list(range(i))
